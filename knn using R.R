@@ -1,7 +1,5 @@
 
 dataset <- read.csv("E:/Sem 11/DM/diabetes_prediction_dataset.csv")
-dataset<-dataset[-c(5001:100000),]
-dataset <- dataset[, -3]
 
 dataset$diabetes <- ifelse(dataset$diabetes == 1, "yes", "no")
 
